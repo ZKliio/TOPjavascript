@@ -40,7 +40,7 @@ function playRound(playerSelection, computerSelection) {
   else{
      //userchoice.lose is equal to computer choice. user loses
     //userchoice.win is computer choice, user wins
-    
+
     if (outcomes[playerSelection].loseTo === computerSelection){
       alert("You Lost")
       console.log("Lose")
@@ -50,3 +50,4 @@ function playRound(playerSelection, computerSelection) {
       console.log("Win")
   }
 }
+
