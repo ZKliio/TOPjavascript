@@ -26,12 +26,21 @@ function playRound(playerSelection, computerSelection) {
   
   //logic behind win lose
   console.log(playerSelection, computerSelection)
+ 
   const outcomes = {
     rock: {loseTo: "paper", winTo: "scissors"},
     paper: {loseTo: "scissors", winTo: "rock"},
     scissors: {loseTo: "rock", winTo: "paper"}
   }
 
+  if (playerSelection != computerSelection){
+    //userchoice.lose is equal to computer choice. user loses
+    //userchoice.win is computer choice, user wins
+    if (outcomes[playerSelection].loseTo === computerSelection) {
+          alert("You Lost")
+          console.log("Lose")
+      }
+    else if (outcomes[playerSelection].winTo === computerSelection){
 
   if (playerSelection == computerSelection){
     alert("You Drew")
