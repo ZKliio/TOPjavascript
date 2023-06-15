@@ -41,20 +41,15 @@ function playRound(playerSelection, computerSelection) {
           console.log("Lose")
       }
     else if (outcomes[playerSelection].winTo === computerSelection){
-
-  if (playerSelection == computerSelection){
-    alert("You Drew")
-    console.log("Draw")
-  }
-  else{
-    if (outcomes[playerSelection].loseTo === computerSelection){
-      alert("You Lost")
-      console.log("Lose")
-    }
-    else if (outcomes[playerSelection].winTo === computerSelection)
       alert("You Won")
       console.log("Win")
+    }
+  else{
+    alert("You draw")
+    console.log("draw")
+    }
   }
+
 }
 
 
