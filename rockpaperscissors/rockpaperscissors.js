@@ -38,6 +38,9 @@ function playRound(playerSelection, computerSelection) {
     console.log("Draw")
   }
   else{
+     //userchoice.lose is equal to computer choice. user loses
+    //userchoice.win is computer choice, user wins
+
     if (outcomes[playerSelection].loseTo === computerSelection){
       alert("You Lost")
       console.log("Lose")
@@ -48,7 +51,3 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-
-// const playerSelection = "Rock".toLowerCase();
-
-// console.log(playRound(playerSelection, computerSelection));

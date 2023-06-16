@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeter</title>
+</head>
+<body>
+    <div class = "container">Greetings</div>
+    <script>
+        
+        const inputName = document.createElement("BUTTON")
+        inputName.innerText = "Enter your name!"
+        inputName.addEventListener("click", () => {
+            userName = prompt("My name is Beepboop! How shall I address you, Mr or Mdm: _____"); 
+            if (typeof userName == "string"){
+                 return alert(`Greetings ${userName}`)}
+            else{return alert("Invalid input!")}
+        })
+        document.body.appendChild(inputName);
+
+    </script>
+    
+</body>
+</html>
