@@ -1,4 +1,7 @@
 html {
+    font-family: cursive;
+    -webkit-text-stroke: 1px rgb(137, 21, 21);
+    color: white;
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -11,6 +14,12 @@ body{
     margin: 0px;
     padding: 0px;
 
+    background-image: url(https://oldschool.runescape.wiki/images/thumb/Login_background_%28default%29.jpg/342px-Login_background_%28default%29.jpg?da769);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 100%; 
+
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,30 +28,56 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    
-    font-size: 50px;
+    flex: 1;
+
+    font-size: 40px;
 }
+
+.tips{
+    font-size: 15px;
+    font-family: cursive;
+    /* color: white; */
+
+    display: flex;
+    justify-content: center;
+}
+
+
 .scoreboard{
     font-size: 30px;
     font-weight: bold;
+    
 
     display:flex;
     justify-content: space-around;
     align-items: center;
+    flex: 2 1 0;
 }
 .button-group{
     display: flex;
-    height: 50%;
     justify-content: space-around;
     align-items: center;
-    gap: 20
+     
+    gap: 20;
+    height: 80%;
 }
 
+button{
+    padding: 0;
+    height: 400px;
+    width: 240px;
+    
+}
+
+
 img{
-    opacity: 0.5;
+    opacity: 0.9;
     height: 100%;
     width: 100%;
-    background-color: black;
+    pointer-events: none;
+    /* background-color: black; */
+    /* mix-blend-mode: multiply; */
+    
 }
 
 
